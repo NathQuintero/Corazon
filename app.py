@@ -4,6 +4,7 @@ import numpy as np
 import requests
 from PIL import Image
 from io import BytesIO
+import pandas as pd  # Agregar importación de pandas
 
 # Cargar los archivos del modelo y el escalador
 modelo = joblib.load('modelo_knn.bin')
@@ -112,4 +113,5 @@ with tab3:
     })
     st.write("### Tabla de predicción:")
     st.dataframe(df)
+
 
